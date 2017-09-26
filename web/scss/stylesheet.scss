@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    background: #212121;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: inherit;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.row {
+    display: flex;
+    &.hori {
+        flex-direction: row;
+    }
+    &.vert {
+        flex-direction: column;
+    }
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    .avatar {
+        position: relative;
+        span {
+            height: 32px;
+            width: 32px;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            background: #E91E63;
+            border-radius: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+    img {
+        border-radius: 100%;
+        -webkit-user-drag: none;
+        -khtml-user-drag: none;
+        -moz-user-drag: none;
+        -o-user-drag: none;
+        user-drag: none;
+    }
+    h2 {
+        font-size: 12pt;
+        text-transform: uppercase;
+    }
+    #info {
+        margin: 1rem;
+    }
+}
+
+#information {
+    width: 50%;
+    height: 100%;
+    >div {
+        height: 50%;
+    }
+    #statistics {
+        &.row div {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-align: center;
+            span {
+                display: block;
+                font-size: 24pt;
+                font-weight: normal;
+            }
+            &#apprentice {
+                background-color: #F100A1;
+            }
+            &#guru {
+                background-color: #A035BA;
+            }
+            &#master {
+                background-color: #4362DF;
+            }
+            &#enlighten {
+                background-color: #00A1F2;
+            }
+            &#burned {
+                background-color: #4D4D4D;
+            }
+        }
+    }
+    #review {
+        background: #424242;
+        height: 50%;
+        a {
+            text-decoration: none;
+        }
+        &.row a {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            div {
+                width: 100%;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+            }
+            span {
+                width: 100%;
+                display: block;
+                font-size: 24pt;
+                font-weight: normal;
+            }
+            &:hover {
+                background: #616161;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1028px) {
+    .row.hori {
+        flex-direction: column;
+    }
+    #user,
+    #information {
+        width: 100%;
+        height: initial;
+    }
+    #user {
+        height: 50%;
+    }
+    #information {
+        flex-direction: row !important;
+        >div {
+            width: 50%;
+        }
+        #statistics.row>div {
+            width: calc(100% - 2rem);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between; 
+            padding: 0rem 1rem;
+            span {
+                font-size: 14pt;
+            }
+        }
+        #review.row>div {
+            width: 100%;
+        }
+    }
+}
+
+#app-title img {
+    padding: 1rem;
+}

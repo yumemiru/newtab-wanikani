@@ -1,0 +1,206 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #FFFFFF;
+  background: #212121; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.row {
+  display: flex; }
+  .row.hori {
+    flex-direction: row; }
+  .row.vert {
+    flex-direction: column; }
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#user {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column; }
+  #user .avatar {
+    position: relative; }
+    #user .avatar span {
+      height: 32px;
+      width: 32px;
+      text-align: center;
+      line-height: 32px;
+      font-weight: bold;
+      background: #E91E63;
+      border-radius: 100%;
+      position: absolute;
+      top: 0;
+      right: 0; }
+  #user img {
+    border-radius: 100%;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none; }
+  #user h2 {
+    font-size: 12pt;
+    text-transform: uppercase; }
+  #user #info {
+    margin: 1rem; }
+
+#information {
+  width: 50%;
+  height: 100%; }
+  #information > div {
+    height: 50%; }
+  #information #statistics.row div {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center; }
+    #information #statistics.row div span {
+      display: block;
+      font-size: 24pt;
+      font-weight: normal; }
+    #information #statistics.row div#apprentice {
+      background-color: #F100A1; }
+    #information #statistics.row div#guru {
+      background-color: #A035BA; }
+    #information #statistics.row div#master {
+      background-color: #4362DF; }
+    #information #statistics.row div#enlighten {
+      background-color: #00A1F2; }
+    #information #statistics.row div#burned {
+      background-color: #4D4D4D; }
+  #information #review {
+    background: #424242;
+    height: 50%; }
+    #information #review a {
+      text-decoration: none; }
+    #information #review.row a {
+      width: 100%;
+      height: 100%;
+      display: flex; }
+      #information #review.row a div {
+        width: 100%;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center; }
+      #information #review.row a span {
+        width: 100%;
+        display: block;
+        font-size: 24pt;
+        font-weight: normal; }
+      #information #review.row a:hover {
+        background: #616161;
+        cursor: pointer; }
+
+@media screen and (max-width: 1028px) {
+  .row.hori {
+    flex-direction: column; }
+  #user,
+  #information {
+    width: 100%;
+    height: initial; }
+  #user {
+    height: 50%; }
+  #information {
+    flex-direction: row !important; }
+    #information > div {
+      width: 50%; }
+    #information #statistics.row > div {
+      width: calc(100% - 2rem);
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0rem 1rem; }
+      #information #statistics.row > div span {
+        font-size: 14pt; }
+    #information #review.row > div {
+      width: 100%; } }
+
+#app-title img {
+  padding: 1rem; }
+  
+section {
+  padding: 2rem 0rem;
+  width: 90%;
+  margin: auto; }
+
+p, ul, li {
+  font-size: 12pt;
+}
+
+p {
+  padding: 1rem;
+
+  background: #ff00aa;
+  border-radius: 2px;
+
+  text-align: justify;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 1rem;
+}
+
+input {
+  width: 100%;
+  height: 40px;
+  font-size: 12pt;
+  border: none;
+  background: transparent;
+  color: #FFFFFF;
+  outline: none;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+input::placeholder {
+  color: #FFFFFF;
+  opacity: 0.2;
+}
+
+button {
+  padding: 1rem 1.5rem;
+  margin: 1rem auto;
+
+  background: #ff00aa;
+  color: #FFFFFF;
+
+  font-size: 12pt;
+
+  border: none;
+  border-radius: 2px;
+}
