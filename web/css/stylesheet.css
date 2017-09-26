@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700");
 body,
 html {
   margin: 0;
@@ -142,39 +143,36 @@ a {
       width: 100%; } }
 
 #app-title img {
-  padding: 1rem; }
-  
+  padding: 1rem;
+  width: 120px;
+  height: 120px; }
+
 section {
   padding: 2rem 0rem;
   width: 90%;
   margin: auto; }
 
-p, ul, li {
-  font-size: 12pt;
-}
+p,
+ul,
+li {
+  font-size: 12pt; }
 
 p {
   padding: 1rem;
-
   background: #ff00aa;
   border-radius: 2px;
-
-  text-align: justify;
-}
+  text-align: justify; }
 
 p a {
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 li {
-  padding: 1rem;
-}
+  padding: 1rem; }
 
 input {
   width: 100%;
@@ -184,23 +182,17 @@ input {
   background: transparent;
   color: #FFFFFF;
   outline: none;
-  border-bottom: 2px solid #FFFFFF;
-}
+  border-bottom: 2px solid #FFFFFF; }
 
 input::placeholder {
   color: #FFFFFF;
-  opacity: 0.2;
-}
+  opacity: 0.2; }
 
 button {
   padding: 1rem 1.5rem;
   margin: 1rem auto;
-
   background: #ff00aa;
   color: #FFFFFF;
-
   font-size: 12pt;
-
   border: none;
-  border-radius: 2px;
-}
+  border-radius: 2px; }

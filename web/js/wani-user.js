@@ -1,5 +1,5 @@
 function show_content(key) {
-    var API = "https://www.wanikani.com/api/user/" + key.api_key + "/";
+    var API = "https://www.wanikani.com/api/user/" + key + "/";
     
     var API_SRS = API + "srs-distribution"
     var API_STUDY = API + "study-queue"
@@ -43,5 +43,14 @@ function show_content(key) {
 };
 
 $(document).ready(function () {
-    var local_storage = chrome.storage.sync.get(['api_key'], function(content) {show_content(content)});
+    var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+    var isFirefox = window.navigator.userAgent.match(/Firefox\/([0-9]+)\./);
+
+    if (isChrome){
+        chrome.storage.sync.get(['api_key'], function(content) {
+            show_content(content.api_key);
+        });
+    } else if(isFirefox) {
+        show_content(window.localStorage.getItem(['api_key']))
+    }
 });
