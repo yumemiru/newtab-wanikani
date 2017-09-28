@@ -21,36 +21,102 @@
         <img src="../ico/icon.png" alt="app-icon">
 
         <div class="row vert">
-            <h1>WaniKani New Tab</h1>
-            <h2>Created by Jakeoid</h2>
+            <h1>WANIKANI NEWTAB PAGE</h1>
+            <h2>YOUR WANIKANI, IN AN EASIER TO ACCESS FORMAT.</h2>
         </div>
 
     </header>
 
-    <section class="row vert center">
+    <section>
 
-        <h1>SETTINGS</h2>
+        <p>
 
-            <p>Heres the place where you need to provide your WaniKani key in order for us to be able to display information
-                to you! Not sure where to get your key? Simply head to the settings page on WaniKani (which can be found
-                <a href="https://www.wanikani.com/settings/account">here</a>) and grab a key for the API v1! From there enter it in the input box below and hit the
-                save button, we will automagically do the rest and give you the information everytime you make a new tab!</p>
+            Heres the place where we need to put your found WaniKani key into so we can show information, not sure where to find it?
+            Simply goto <a href="https://www.wanikani.com/settings/account">here</a> and get the API v1 key!
 
-            <input id="wanikey" placeholder="WaniKani Key" />
-
-            <button id="save-settings">Save</button>
+        </p>
 
     </section>
 
-    <section class="row vert center">
+    <section class="row">
 
-        <h1>SOCIAL</h2>
+        <div id="sidebar">
 
-        <ul>
-            <li><a href="https://github.com/jakeoid/newtab-wanikani">Github</a></li>
-        </ul>
+            <h2>App Settings</h2>
+
+        </div>
+
+        <div id="content" class="row vert">
+
+            <div id="app-settings" class="row vert">
+
+                <label for="wanikey" />WaniKani Key</label>
+                <input id="wanikey" placeholder="48wzUIi6yA1PAtSf" />
+
+                <button id="save-settings">Save</button>
+
+            </div>
+
+        </div>
 
     </section>
+
+    <section class="row">
+
+        <div id="sidebar">
+
+            <h2>Version</h2>
+
+        </div>
+
+        <div id="version" class="row vert">
+
+            <div>
+                <h3>Installed Version</h3>
+                <span id="user-version">0.0.0</span>
+            </div>
+
+            <div>
+                <h3>Latest Version</h3>
+                <span id="latest-version">0.0.0</span>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="row">
+
+        <div id="sidebar">
+
+            <h2>Feedback</h2>
+
+        </div>
+
+        <div id="feedback" class="row vert">
+
+            <p>
+
+                If you're having trouble or you just want to leave some feedback about the application, you can do so in the following places!
+
+            </p>
+
+            <ul>
+
+                <a href="https://community.wanikani.com/t/wanikani-newtab-page/19885"><li>WaniKani Forums</li></a>
+                <a href="https://github.com/bleeps-n-bloops/newtab-wanikani"><li>Github</li></a>
+
+            </ul>
+
+        </div>
+
+    </section>
+
+    <footer>
+
+        Version <label id="footer-version"></label>
+
+    </footer>
 
 </body>
 
