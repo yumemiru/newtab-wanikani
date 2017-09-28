@@ -6,6 +6,7 @@ html {
     height: 100%;
     width: 100%;
     font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
     color: #FFFFFF;
     background: #212121;
 }
@@ -22,9 +23,20 @@ h6 {
     padding: 0;
 }
 
+h3 {
+    text-transform: uppercase;
+    font-size: 12pt;
+}
+
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background: #212121;
 }
 
 .row {
@@ -179,29 +191,40 @@ a {
             width: 100%;
         }
     }
+    #app-title {
+        text-align: center;
+    }
+    .settings {
+        top: 10px;
+        left: 10px;
+    }
 }
 
-#app-title img {
-    padding: 1rem;
-    width: 120px;
-    height: 120px;
+#app-title {
+    width: 90%;
+    margin: auto;
+
+    img {
+        padding: 1rem;
+        width: 120px;
+        height: 120px;
+    }
+    h2 {
+        margin: 0px;
+        opacity: 0.8;
+    }
 }
 
 section {
-    padding: 2rem 0rem;
+    padding: 1rem 0rem;
     width: 90%;
     margin: auto;
 }
 
-p,
-ul,
-li {
-    font-size: 12pt;
-}
-
 p {
     padding: 1rem;
-    background: #ff00aa;
+    margin: 1rem 0rem;
+    background: rgba(0, 0, 0, 0.1);
     border-radius: 2px;
     text-align: justify;
 }
@@ -236,6 +259,16 @@ input::placeholder {
     opacity: 0.2;
 }
 
+label {
+    padding-top: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    margin: 1rem 0rem;
+}
+
 button {
     padding: 1rem 1.5rem;
     margin: 1rem auto;
@@ -244,4 +277,34 @@ button {
     font-size: 12pt;
     border: none;
     border-radius: 2px;
+}
+
+.settings {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    opacity: 0.4;
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+#sidebar {
+    width: 20%;
+}
+
+#content {
+    width: 80%;
+}
+
+#version span {
+    margin: 1rem 2rem;
+    display: block;
+    font-size: 14pt;
+}
+
+footer {
+    padding: 2rem 0rem;
+    opacity: 0.8;
+    text-align: center;
 }
