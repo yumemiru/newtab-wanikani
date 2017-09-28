@@ -3,7 +3,7 @@
 
   "name": "WaniKani NewTab Page",
   "description": "This extension changes the New Tab Page to show WaniKani information!.",
-  "version": "0.0.3",
+  "version": "0.0.4",
 
   "browser_action": {
     "default_title": "WaniKani NewTab Page",
