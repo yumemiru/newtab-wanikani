@@ -38,7 +38,9 @@ function show_content(key) {
 
         $('#information #review #lessons span').text(study.lessons_available);
         $('#information #review #reviews span').text(study.reviews_available);
-    });
+    })
+    
+    $('#not-loaded-overlay').remove();
 
 };
 
